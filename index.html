@@ -1,1 +1,291 @@
-<h1>Hallo Smidy</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smidy — a MIDI 2.0 and MIDI-CI toolbox for musicians, developers and MIDI enthusiasts.">
+  <title>Smidy — MIDI 2.0 Toolbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav class="nav">
+    <div class="brand"><div class="brand-note">♪</div><span>SMIDY</span></div>
+    <a class="nav-link" href="#features">Features</a>
+    <a class="nav-link" href="#midi2">MIDI 2.0</a>
+    <a class="nav-link" href="#free">Free</a>
+    <a class="nav-link" href="#download">Download</a>
+  </nav>
+  <div class="hero-content">
+    <div class="hero-copy">
+      <div class="eyebrow">MIDI 2.0 · MIDI-CI · SYSEX</div>
+      <h1>See what your<br><span>MIDI is doing.</span></h1>
+      <p class="lead">Smidy is a powerful MIDI analysis and editing toolbox for musicians, developers and everyone who wants to look beyond the surface of MIDI.</p>
+      <div class="hero-buttons">
+        <a class="button primary" href="#download">Download Smidy Free</a>
+        <a class="button secondary" href="#features">Explore features</a>
+      </div>
+    </div>
+    <div class="hero-art"><div class="splash-frame"><img src="images/smidy-splash.jpg" alt="Smidy 3.0 featuring MIDI 2.0"></div></div>
+  </div>
+</header>
+<main>
+  <section class="intro" id="features">
+    <div class="section-kicker">WHAT IS SMIDY?</div>
+    <h2>One tool. A complete view<br>of your <span>MIDI.</span></h2>
+    <p>Smidy combines MIDI playback, editing and detailed event inspection in a single workspace. From traditional MIDI events to modern MIDI 2.0 data, everything stays visible and accessible.</p>
+  </section>
+
+  <section class="interface-showcase">
+    <div class="screenshot-frame"><img src="images/smidy-interface.png" alt="Smidy MIDI editor and event list"></div>
+    <div class="showcase-caption">
+      <div><div class="section-kicker">THE SMIDY WORKSPACE</div><h3>See the music.<br><span>See the data.</span></h3></div>
+      <p>A complete MIDI workspace with playback, track controls, editing and detailed event inspection — all in one place.</p>
+    </div>
+  </section>
+
+  <section class="feature-grid">
+    <article class="feature-card"><div class="feature-number">01</div><h3>MIDI 2.0</h3><p>Work with Universal MIDI Packets and explore the new world beyond MIDI 1.0.</p></article>
+    <article class="feature-card"><div class="feature-number">02</div><h3>MIDI-CI</h3><p>Discover devices, profiles and capabilities — and see what MIDI devices tell each other.</p></article>
+    <article class="feature-card"><div class="feature-number">03</div><h3>SysEx</h3><p>Inspect and edit manufacturer-specific data with a semantic approach to SysEx.</p></article>
+    <article class="feature-card"><div class="feature-number">04</div><h3>Property Exchange</h3><p>Explore the structured data that modern MIDI devices can exchange through MIDI-CI.</p></article>
+  </section>
+
+  <section class="midi2-endpoints">
+    <div class="endpoint-intro">
+      <div class="section-kicker">MIDI 2.0</div>
+      <h2>Right where <span>you need it.</span></h2>
+      <p>
+        Smidy doesn't treat MIDI 2.0 as a separate world. MIDI 2.0 endpoints
+        appear alongside traditional MIDI devices and can be assigned directly
+        to tracks.
+      </p>
+    </div>
+
+    <div class="endpoint-shot">
+      <div class="shot-label">SMIDY · MIDI DEVICE SELECTION</div>
+      <img src="images/midi2-endpoints.png" alt="Smidy MIDI device selection showing MIDI 2.0 endpoints and MIDI WinMM / MME devices">
+    </div>
+
+    <div class="endpoint-points">
+      <div>
+        <strong>MIDI 2.0 Endpoints</strong>
+        <span>Discover available MIDI 2.0 endpoints through Windows MIDI Services.</span>
+      </div>
+      <div>
+        <strong>Traditional MIDI</strong>
+        <span>Continue working with conventional MIDI WinMM / MME devices.</span>
+      </div>
+      <div>
+        <strong>One workflow</strong>
+        <span>Assign MIDI devices to tracks without switching between different worlds.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="midi-ci-showcase" id="midi-ci">
+    <div class="section-kicker">MIDI-CI IN ACTION</div>
+    <h2>Smidy doesn't just <span>show MIDI-CI.</span><br>It understands it.</h2>
+    <p class="midi-ci-lead">
+      Smidy can decode and present MIDI-CI communication semantically — from
+      Discovery and Profiles to Property Exchange — while keeping the original
+      SysEx data available in the event stream.
+    </p>
+
+    <div class="midi-ci-shot">
+      <div class="shot-label">SMIDY · MIDI-CI / PROPERTY EXCHANGE</div>
+      <img src="images/midici.jpg" alt="Smidy showing a MIDI-CI communication with the Bome MIDI-CI Responder and decoded Property Exchange data">
+    </div>
+
+    <div class="midi-ci-flow">
+      <div><strong>01</strong><span>Discovery Inquiry</span><small>Find out who is there.</small></div>
+      <div><strong>02</strong><span>Property Exchange</span><small>Discover what the device can provide.</small></div>
+      <div><strong>03</strong><span>ResourceList</span><small>Ask which resources are available.</small></div>
+      <div><strong>04</strong><span>DeviceInfo</span><small>Read structured device information.</small></div>
+    </div>
+
+    <p class="midi-ci-note">
+      This demonstration uses the Bome MIDI-CI Responder through its MIDI WinMM / MME interface.
+      Smidy also works with the modern MIDI 2.0 endpoint infrastructure provided by Windows MIDI Services.
+    </p>
+  </section>
+
+  <section class="property-showcase">
+    <div class="section-kicker">PROPERTY EXCHANGE</div>
+    <h2>Structured data.<br><span>Real media.</span></h2>
+    <p class="property-lead">
+      Property Exchange is more than text. Smidy lets you work comfortably with
+      media data defined by the MIDI Association — including images — directly
+      inside the Property Exchange data.
+    </p>
+
+    <div class="property-shot">
+      <div class="shot-label">SMIDY · MIDI-CI PROPERTY EXCHANGE</div>
+      <img src="images/property-exchange.png" alt="Smidy Property Exchange data containing a PNG image with mediaType image/png">
+    </div>
+
+    <div class="property-points">
+      <div>
+        <strong>Drag &amp; drop</strong>
+        <span>Drop supported media directly into the Property Exchange data instead of dealing with the raw encoded payload.</span>
+      </div>
+      <div>
+        <strong>MMA-defined media</strong>
+        <span>Work with media types defined by the Property Exchange specification — not just plain text.</span>
+      </div>
+      <div>
+        <strong>See what is really there</strong>
+        <span>The data remains part of the MIDI stream while Smidy presents it in a form you can actually understand.</span>
+      </div>
+    </div>
+
+    <div class="property-highlight">
+      <span>ONE MORE THING</span>
+      <strong>In Smidy Full, Property Exchange media can also be exported.</strong>
+    </div>
+  </section>
+
+  <section class="midi2" id="midi2">
+    <div class="midi2-copy"><div class="section-kicker">THE NEXT GENERATION</div><h2>Welcome to<br><span>MIDI 2.0.</span></h2><p>MIDI 2.0 introduces a much richer language for communication between applications and instruments. Smidy is built to make that communication understandable.</p><p>From UMP messages to MIDI-CI and Property Exchange — Smidy lets you inspect what is really happening.</p><p class="resolution-note">MIDI 2.0 data is maintained internally at its native high resolution and sent at the appropriate resolution when using MIDI 2.0 output.</p></div>
+    <div class="terminal"><div class="terminal-top"><i></i><i></i><i></i><span>SMIDY · MIDI MONITOR</span></div><pre><code>UMP
+  Message Type     0x4
+  Group             0
+  Status            Note On
+  Channel           1
+  Note              60
+  Velocity          0x7FFF
+
+MIDI-CI
+  Discovery         Inquiry
+  Version           1.2
+  Property Exchange Ready</code></pre></div>
+  </section>
+
+  <section class="free-showcase" id="free">
+    <div class="section-kicker">SMIDY FREE</div>
+    <h2>Not a trial.<br><span>A real MIDI tool.</span></h2>
+    <p class="free-lead">
+      Smidy Free is a fully usable MIDI tool rather than a crippled trial version.
+      It is nevertheless a time-limited Microsoft MIDI 2.0 preview build.
+      Import MIDI files, record MIDI, edit your data and export your work — and
+      explore Smidy's semantic SysEx and MIDI-CI features along the way.
+    </p>
+
+    <div class="free-grid">
+      <div class="free-list">
+        <div class="free-item"><strong>Import · Edit · Export</strong><span>Work with MIDI files from start to finish.</span></div>
+        <div class="free-item"><strong>Record MIDI</strong><span>Capture incoming MIDI data directly in Smidy.</span></div>
+        <div class="free-item"><strong>MIDI-CI included</strong><span>Explore Discovery, Profiles and Property Exchange communication supported by Smidy.</span></div>
+        <div class="free-item"><strong>Semantic SysEx</strong><span>Read and edit supported Roland GS, Integra-7, Yamaha XG and Universal MIDI messages in meaningful terms.</span></div>
+      </div>
+
+      <div class="free-card">
+        <div class="free-card-mark">FREE</div>
+        <h3>Use Smidy.<br>Really use it.</h3>
+        <p>Some advanced functions are reserved for Smidy Full. The core workflow isn't.</p>
+        <div class="free-tagline">No crippled MIDI editor. Full core workflow.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="action-showcase" id="action">
+    <div class="section-kicker">SMIDY IN ACTION</div>
+    <h2>Small tools.<br><span>Big difference.</span></h2>
+    <p class="action-lead">
+      Smidy's MIDI editing functions are designed to make precise operations feel
+      immediate and understandable. Sometimes a little animation says it better.
+    </p>
+
+    <div class="action-grid">
+      <article class="action-card">
+        <div class="action-video-wrap">
+          <div class="shot-label">SMIDY · CUT MIDI EVENTS</div>
+          <video class="action-video" autoplay muted loop playsinline preload="metadata" poster="images/smidy-interface.png">
+            <source src="images/midi-cut.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="action-copy">
+          <div class="action-number">01</div>
+          <h3>Cut</h3>
+          <p>Select the range you want to remove and let Smidy take care of the MIDI events.</p>
+        </div>
+      </article>
+
+      <article class="action-card">
+        <div class="action-video-wrap">
+          <div class="shot-label">SMIDY · CHANGE PITCH / KEY ALL</div>
+          <video class="action-video" autoplay muted loop playsinline preload="metadata" poster="images/smidy-interface.png">
+            <source src="images/midi-key-all.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="action-copy">
+          <div class="action-number">02</div>
+          <h3>Change Pitch / Key All</h3>
+          <p>Shift the pitch or key of the selected MIDI material with a single focused operation.</p>
+        </div>
+      </article>
+
+      <article class="action-card">
+        <div class="action-video-wrap">
+          <div class="shot-label">SMIDY · SPLIT MIDI CHANNELS</div>
+          <video class="action-video" autoplay muted loop playsinline preload="metadata" poster="images/smidy-interface.png">
+            <source src="images/midi-split-channels.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="action-copy">
+          <div class="action-number">03</div>
+          <h3>Split MIDI Channels</h3>
+          <p>Separate MIDI material by channel and keep the result clear and easy to work with.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="download" id="download">
+    <div class="download-inner">
+      <div><div class="section-kicker">START EXPLORING</div><h2>Smidy <span>Free</span></h2><p>Download the free preview and explore MIDI 2.0, MIDI-CI and Smidy's powerful MIDI tools.</p></div>
+      <a class="button primary large" href="https://sylthansi.github.io/smidyfree/">Download Smidy Free</a>
+      <div class="preview-notice">
+        <div class="preview-notice-kicker">IMPORTANT · MICROSOFT MIDI 2.0 PREVIEW</div>
+        <h3>Smidy Free is available until <strong>November 30, 2026.</strong></h3>
+        <p>This version uses pre-release Microsoft Windows MIDI Services components. The preview code is not intended for production use and may not work in a production environment.</p>
+      </div>
+    </div>
+    <p class="small-note">Windows · Free to use · Full version coming later</p>
+  </section>
+  <section class="legal-section" id="imprint">
+    <div class="legal-inner">
+      <div class="section-kicker">LEGAL</div>
+      <h2>Impressum</h2>
+      <div class="legal-copy">
+        <p><strong>Anbieter:</strong><br>Frank Dirk Rittberger<br>Carl-Behrens-Str. 13<br>01728 Bannewitz<br>Deutschland</p>
+        <p><strong>Kontakt:</strong><br>E-Mail: <a href="mailto:frittelberger@gmail.com">frittelberger@gmail.com</a><br>Telefon: 0351/27802285</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal-section legal-section-last" id="privacy">
+    <div class="legal-inner">
+      <div class="section-kicker">LEGAL</div>
+      <h2>Datenschutz</h2>
+      <div class="legal-copy">
+        <p>Die Software Smidy nimmt den Schutz Ihrer persönlichen Daten ernst.<br>
+        Die Anwendung wird vollständig lokal auf Ihrem Endgerät ausgeführt.<br>
+        Es werden zu keinem Zeitpunkt personenbezogene Daten erhoben,<br>
+        gespeichert oder an externe Server übermittelt.</p>
+        <p>Die Software verfügt über keine Analyse-Tools, Crash-Reporter oder automatische Update-Funktionen.<br>
+        Verantwortlicher im Sinne der DSGVO ist der im Impressum genannte Entwickler.</p>
+        <p>Für den auf dieser Website eingebundenen Besucherzähler wird ein externer Dienst verwendet. Dabei kann eine technische Verbindung zu diesem Dienst hergestellt werden.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer>
+  <div class="footer-brand">SMIDY</div>
+  <div>© 2026 Frank Rittberger · MIDI tools for curious people.</div>
+  <div class="visitor-counter"><span>VISITORS</span><img src="https://api.visitorbadge.io/api/VisitorHit?user=sylthansi&repo=smidyfree&label=VISITORS&labelColor=10161d&countColor=58d5e8" alt="Visitor counter"></div>
+  <div class="footer-links"><a href="#imprint">Impressum</a><a href="#privacy">Datenschutz</a></div>
+</footer>
+</body>
+</html>
