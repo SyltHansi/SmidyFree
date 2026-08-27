@@ -375,26 +375,28 @@
   .legal-copy br { display: none; }
 }
 
-/* v11 — final polish: diagonal preview notice + visitor counter */
+/* v12 — diagonal preview notice kept compact so the download button remains clearly visible */
 .download-inner { position: relative; overflow: visible; }
+.download-inner > .button { position: relative; z-index: 2; }
 .preview-notice {
   position: absolute;
   z-index: 5;
-  right: -52px;
-  top: 50%;
-  width: min(460px, 48%);
+  right: -8px;
+  top: 78%;
+  width: min(310px, 30%);
   margin: 0;
-  padding: 18px 24px 19px;
-  border: 1px solid rgba(88,213,232,.48);
+  padding: 13px 17px 14px;
+  border: 1px solid rgba(88,213,232,.55);
   border-radius: 12px;
   background: rgba(5,9,12,.96);
   box-shadow: 0 22px 60px rgba(0,0,0,.55), 0 0 35px rgba(88,213,232,.08);
   text-align: left;
   transform: translateY(-50%) rotate(-6deg);
+  pointer-events: none;
 }
-.preview-notice-kicker { font-size: 9px; }
-.preview-notice h3 { margin: 7px 0 5px; font-size: 20px; }
-.preview-notice p { margin: 0; font-size: 11px; line-height: 1.45; }
+.preview-notice-kicker { font-size: 8px; }
+.preview-notice h3 { margin: 5px 0 4px; font-size: 16px; line-height: 1.08; }
+.preview-notice p { margin: 0; font-size: 9.5px; line-height: 1.4; }
 .visitor-counter { display:flex; align-items:center; gap:8px; white-space:nowrap; }
 .visitor-counter img { height:20px; width:auto; display:block; }
 .visitor-counter > span { display:none; }
